@@ -3,12 +3,8 @@
 require "config/class.php"; 
 
 $PaysautoClass = new APICONNECT("Your api token","Your api key","Your api secret");
-
 $Receive = $PaysautoClass->receive();
-
 $VerifyHash = $PaysautoClass->verify();
-
-
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
